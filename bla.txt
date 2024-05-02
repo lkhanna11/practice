@@ -1,1 +1,6 @@
 jksdfgsdkfg
+
+# Calculating historical volatility
+standard_deviation = np.std(log_returns)
+historical_volatility = standard_deviation * np.sqrt(252)
+print(f"The historical volatility for META calculated based on the data for last 6 months is {historical_volatility: .4f}.")
